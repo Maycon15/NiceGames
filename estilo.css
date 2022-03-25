@@ -1,0 +1,15 @@
+#resp li
+{
+	list-style:lower-latin;
+	cursor: pointer;
+}
+
+#resp li:hover
+{
+	color: #FFFF00;
+}
+
+#resp li:active
+{
+	color: #FF0000;
+}
