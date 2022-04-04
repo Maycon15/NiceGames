@@ -9,65 +9,47 @@
 	</head>
 	<body>
 		<script>
-			function acertou()
+			function acertou(x)
 			{
-				alert("PARABÉNS \nVocê acertou !!!")
+				alert("PARABÉNS \nVocê acertou !!!");
+				document.getElementById(x).style.color="rgb(30,200,30)";
+				
 			}
-		</script>
-		<script>
-			function errou()
+			function errou(x)
 			{
 				alert("que pena :( \nVocê errou!!!");
+				document.getElementById(x).style.color="rgb(200,30,30)";
 			}
 		</script>
-		<br>
-		<br>
 		<ol id="titulo"> Nice Quiz <img src="quiz.png">
-			<br>
-			<br>
-			<div id="quest">
-			<li>Quais o menor e o maior país do mundo?</li>
-			<br>
-				<ol id="resp">
-					<li  onclick="acertou()">Vaticano e Rússia</li>
-					<li onclick="errou()">Nauru e China</li>
-					<li onclick="errou()">Mônaco e Canadá</li>
-					<li onclick="errou()">Malta e Estados Unidos</li>
+			<li class="quest">Quais o menor e o maior país do mundo?</li>
+				<ol class="resp">
+					<li id="r1" onclick="acertou('r1')">Vaticano e Rússia</li>
+					<li id="r2" onclick="errou('r2')">Nauru e China</li>
+					<li id="r3" onclick="errou('r3')">Mônaco e Canadá</li>
+					<li id="r4" onclick="errou('r4')">Malta e Estados Unidos</li>
 				</ol>
-			<br>
-			</div>
-			<div id="quest">
-			<li>Pergunta 2</li>
-			<br>
-				<ol id="resp">
-					<li>Resposta 1</li>
-					<li>Resposta 2</li>
-					<li>Resposta 3</li>
-					<li>Resposta 4</li>
+			<li class="quest">Qual o maior animal do mundo ?</li>
+				<ol class="resp">
+					<li id="r5" onclick="errou('r5')">Loxodonta africana (elefante-africano-da-savana)</li>
+					<li id="r6" onclick="errou('r6')">Giraffa camelopardalis (Girafa-masai)</li>
+					<li id="r7" onclick="acertou('r7')">Balaenoptera musculus (baleia-azul)</li>
+					<li id="r8" onclick="errou('r8')">Tapirus terrestris (anta-brasileira)</li>
 				</ol>
-			<br>
-			</div>
-			<div id="quest">
-			<li>Pergunta 3</li>
-			<br>
-				<ol id="resp">
-					<li>Resposta 1</li>
-					<li>Resposta 2</li>
-					<li>Resposta 3</li>
-					<li>Resposta 4</li>
+			<li class="quest">Qual é a população de formigas existente no mundo ?</li>
+				<ol class="resp">
+					<li id="r9" onclick="errou('r9')">De 10 milhões a 1 trilhão</li>
+					<li id="r10" onclick="errou('r10')">De 10 bilhões a 1 quatrilhão</li>
+					<li id="r11" onclick="errou('r11')">De 10 trilhões a 1 quintilhão</li>
+					<li id="r12" onclick="acertou('r12')">De 10 quatrilhões a 1 septilhão</li>
 				</ol>
-			<br>
-			</div>
-			<div id="quest">
-			<li>Pergunta 4</li>
-			<br>
-				<ol id="resp">
-					<li>Resposta 1</li>
-					<li>Resposta 2</li>
-					<li>Resposta 3</li>
-					<li>Resposta 4</li>
+			<li  class="quest">Em que ano os filmes deixaram  de ser mudos ?</li>
+				<ol class="resp">
+					<li id="r13" onclick="errou('r13')">1898</li>
+					<li id="r14" onclick="acertou('r14')">1927</li>
+					<li id="r15" onclick="errou('r15')">1915</li>
+					<li id="r16" onclick="errou('r16')">1933</li>
 				</ol>
-			</div>
 		</ol>
 	</body>
 </html>
