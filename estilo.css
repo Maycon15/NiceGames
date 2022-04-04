@@ -7,15 +7,17 @@ body
 
 #titulo
 {
-	width:40%;
-	margin-left: 25%;
+	list-style:inside decimal;
+	width:60%;
+	margin-left: 15%;
 	text-align: center;
 	font-family: Luminari, fantasy;
-	font-size: 40px;
+	font-size: 30px;
 	background-color:rgba(170, 170, 170, 0.7);
 	color: #000000;
 	padding-top: 10px;
 	border-radius: 30px;
+	padding-bottom: 10px;
 }
 
 img
@@ -25,38 +27,44 @@ img
 	margin-bottom: -5px;
 }
 
-#quest
+.quest
 {	
+	width: 520px;
+	text-transform: uppercase;
+	font-weight: bold;
 	text-align: justify;
 	font-family: sans-serif;
-	font-size: 15px;
-	padding: 20px;
+	font-size: 20px;
 	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
-#resp
+.resp
 {
 	width: auto;
 	text-align: justify;
 	font-family: sans-serif;
+	font-size: 15px;
+	margin-bottom: 10px;
 }
 
-#resp li
+.resp li
 {
-	list-style:lower-latin;
+	list-style:inside lower-latin;
 	cursor: pointer;
+	width: 350px;
 }
 
-#resp li:hover
+.resp li:hover
 {
-	font-weight: bold;
+	text-decoration: uppercase;
 	transition: 0.3s;
 }
 
-#resp li:active
+.resp li:active
 {
-	color: #FF0000;
-	font-weight: bold;
+	color: rgb(30,30,200);
+	text-decoration: uppercase;
 	transition: 0.1s;
-	background-color: #b8860b;
+	background-color: #974322;
 }
